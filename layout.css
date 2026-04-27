@@ -15,19 +15,18 @@
    Base layout styles used by mobile devices
    up to 480px and cascaded to larger devices 
    unless superceded by other styles.
-   =============================================
-*/
+   ============================================= */
 
 html {
    height: 100%;
-   background-color: #9c403d;
+   background-color: rgb(156, 64, 61);
 }
 
 body {
    width: 95%;
    max-width: 1300px;
    margin: 15px auto;
-   background-color: #efefef;
+   background-color: rgb(239, 239, 239);
 }
 
 /* Header */
@@ -47,7 +46,7 @@ header img {
 
 nav {
    width: 100%;
-   background-color: #0d4d9b;
+   background-color: rgb(13, 77, 155);
    padding: 8px 0;
    margin: 10px auto 25px auto;
 }
@@ -65,9 +64,9 @@ nav ul li a {
    width: 180px;
    margin: 0 auto;
    padding: 12px 10px;
-   background-color: #f28c28;
-   color: white;
-   border: 3px solid #d9d9d9;
+   background-color: rgb(242, 140, 40);
+   color: rgb(255, 255, 255);
+   border: 3px solid rgb(217, 217, 217);
    border-radius: 12px;
    font-weight: bold;
    font-size: 1.1em;
@@ -90,9 +89,9 @@ main.homePage {
 
 .leftBox,
 .rightBox {
-   border: 6px solid #0d4d9b;
+   border: 6px solid rgb(13, 77, 155);
    border-radius: 40px;
-   background-color: #efefef;
+   background-color: rgb(239, 239, 239);
    min-height: 220px;
    padding: 40px 20px;
 }
@@ -121,7 +120,7 @@ main.homePage {
 
 footer {
    text-align: center;
-   background-color: #f28c28;
+   background-color: rgb(242, 140, 40);
    padding: 12px 10px;
    margin-top: 20px;
    font-weight: bold;
@@ -130,6 +129,103 @@ footer {
 footer p {
    margin: 6px 0;
 }
+
+/* Services Page */
+
+main.servicesPage {
+   width: 95%;
+   margin: 20px auto;
+}
+
+.servicesImage,
+.servicesTableBox {
+   width: 100%;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.servicesImage img {
+   width: 100%;
+   max-width: 420px;
+   margin: 0 auto;
+}
+
+.servicesTableBox h2 {
+   background-color: rgb(13, 91, 130);
+   color: rgb(255, 255, 255);
+   padding: 12px;
+   margin-bottom: 0;
+   font-size: 1.2em;
+}
+
+.servicesTableBox table {
+   width: 100%;
+   background-color: rgb(217, 221, 226);
+}
+
+.servicesTableBox th,
+.servicesTableBox td {
+   border: 2px solid rgb(102, 102, 102);
+   padding: 18px 10px;
+   text-align: center;
+}
+
+.servicesTableBox th {
+   background-color: rgb(199, 204, 210);
+}
+
+/* Reviews Page */
+main.reviewsPage {
+   width: 96%;
+   margin: 0 auto 20px auto;
+   background-color: rgb(190, 190, 190);
+   padding: 10px;
+}
+
+.reviewsLeft,
+.reviewsCenter,
+.reviewsRight {
+   width: 100%;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.reviewBox {
+   width: 85%;
+   margin: 0 auto 25px auto;
+   padding: 20px 10px;
+   background-color: rgb(255, 255, 255);
+   border: 6px solid rgb(13, 77, 155);
+   border-radius: 15px;
+   font-size: 1.4em;
+   line-height: 1.3;
+}
+
+.videoBox {
+   width: 100%;
+   min-height: 250px;
+   background-color: rgb(50, 50, 50);
+   color: rgb(255, 255, 255);
+   border: 8px ridge rgb(60, 90, 100);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.5em;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.videoBox iframe {
+   width: 100%;
+   height: 100%;
+   min-height: 250px;
+   border: none;
+}
+
+.reviewsRight img {
+   width: 100%;
+   margin-bottom: 20px;
+}
+
 
 /* =============================================
    Tablet layout styles used by devices
@@ -165,6 +261,16 @@ footer p {
    footer p {
       display: inline-block;
       margin: 0 12px;
+   }
+
+   main.servicesPage {
+      width: 95%;
+   }
+
+   .servicesImage,
+   .servicesTableBox {
+      width: 100%;
+      margin-bottom: 20px;
    }
 }
 
@@ -220,66 +326,7 @@ footer p {
       display: inline-block;
       margin: 0 18px;
    }
-}
-/* Services Page */
 
-main.servicesPage {
-   width: 95%;
-   margin: 20px auto;
-}
-
-.servicesImage,
-.servicesTableBox {
-   width: 100%;
-   text-align: center;
-   margin-bottom: 20px;
-}
-
-.servicesImage img {
-   width: 100%;
-   max-width: 420px;
-   margin: 0 auto;
-}
-
-.servicesTableBox h2 {
-   background-color: #0d5b82;
-   color: white;
-   padding: 12px;
-   margin-bottom: 0;
-   font-size: 1.2em;
-}
-
-.servicesTableBox table {
-   width: 100%;
-   background-color: #d9dde2;
-}
-
-.servicesTableBox th,
-.servicesTableBox td {
-   border: 2px solid #666;
-   padding: 18px 10px;
-   text-align: center;
-}
-
-.servicesTableBox th {
-   background-color: #c7ccd2;
-}
-
-/* Tablet */
-@media only screen and (min-width: 481px) {
-   main.servicesPage {
-      width: 95%;
-   }
-
-   .servicesImage,
-   .servicesTableBox {
-      width: 100%;
-      margin-bottom: 20px;
-   }
-}
-
-/* Desktop */
-@media only screen and (min-width: 769px) {
    main.servicesPage {
       width: 96%;
       margin: 30px auto;
@@ -295,5 +342,47 @@ main.servicesPage {
 
    .servicesTableBox {
       width: 62%;
+   }
+   
+   main.reviewsPage {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 18px;
+   }
+
+   .reviewsLeft {
+      width: 30%;
+      margin-bottom: 0;
+   }
+
+   .reviewsCenter {
+      width: 40%;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+   }
+
+   .reviewsRight {
+      width: 28%;
+      margin-bottom: 0;
+   }
+
+   .reviewBox {
+      width: 90%;
+      margin-bottom: 25px;
+   }
+
+   .videoBox {
+      min-height: 350px;
+   }
+
+   .videoBox iframe {
+      min-height: 350px;
+   }
+
+   .reviewsRight img {
+      height: 160px;
+      object-fit: cover;
    }
 }

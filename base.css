@@ -14,8 +14,7 @@
 
 /* =============================================
 	HTML5 structural elements
-   =============================================
-*/
+   ============================================= */
 
 article, aside, details, dl, figcaption, figure, footer, header, main, nav, section {
    display: block;
@@ -23,8 +22,7 @@ article, aside, details, dl, figcaption, figure, footer, header, main, nav, sect
 
 /* =============================================
    Default colors, margins and sizing
-   =============================================
-*/
+   ============================================= */
 
 html {
    font-size: 100%;
@@ -37,7 +35,7 @@ html {
 
 html, button, input, select, textarea {
    font-family: Georgia, "Times New Roman", serif;
-   color: #222;
+   color: rgb(34, 34, 34);
 }
 
 body {
@@ -48,8 +46,7 @@ body {
 
 /* =============================================
    Hypertext links
-   =============================================
-*/
+   ============================================= */
 
 a {
    color: inherit;
@@ -74,8 +71,7 @@ a:hover, a:active {
 
 /* =============================================
    Default font styles
-   =============================================
-*/
+   ============================================= */
 
 b, strong {
    font-weight: bold;
@@ -93,7 +89,7 @@ hr {
    display: block;
    height: 1px;
    border: 0;
-   border-top: 1px solid #ccc;
+   border-top: 1px solid rgb(204, 204, 204);
    margin: 1em 0;
    padding: 0;
 }
@@ -133,8 +129,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* =============================================
    Default list styles
-   =============================================
-*/
+   ============================================= */
 
 ul, ol {
    margin: 0;
@@ -153,8 +148,7 @@ nav ul, nav ol {
 
 /* =============================================
    Default styles for images and media
-   =============================================
-*/
+   ============================================= */
 
 img {
    border: 0;
@@ -169,16 +163,19 @@ figure {
 }
 
 .instaIcon {
-	width: 20;
-	display:inline; 
-	vertical-align: middle;
-	margin-right: 5px;
+   width: 20px;
+   display: inline;
+   vertical-align: middle;
+   margin-right: 5px;
+}
+
+.instaIcon1 {
+   width: 30px;
 }
 
 /* =============================================
    Default styles for web forms
-   =============================================
-*/
+   ============================================= */
 
 form {
    margin: 0;
@@ -208,6 +205,8 @@ button, input, select, textarea {
 
 button, input {
    line-height: normal;
+   border: none;
+   padding: 5px;
 }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
@@ -223,12 +222,6 @@ input[type="search"] {
    box-sizing: border-box;
 }
 
-button,
-input {
-   border: none;
-   padding: 5px;
-}
-
 textarea {
    overflow: auto;
    vertical-align: top;
@@ -237,8 +230,7 @@ textarea {
 
 /* =============================================
    Default styles for web tables
-   =============================================
-*/
+   ============================================= */
 
 table {
    border-collapse: collapse;
@@ -248,6 +240,7 @@ table {
 td, th {
    vertical-align: top;
 }
+
 /* ===============================
    CONTACT PAGE
    =============================== */
@@ -264,8 +257,8 @@ main.contactPage {
 }
 
 .contactInfoBox {
-   border: 6px solid #0d4d9b;
-   background-color: #efefef;
+   border: 6px solid rgb(13, 77, 155);
+   background-color: rgb(239, 239, 239);
    padding: 25px 20px;
    text-align: center;
 }
@@ -283,7 +276,7 @@ main.contactPage {
 }
 
 .contactInfoBox a {
-   color: #5d7f8c;
+   color: rgb(93, 127, 140);
    text-decoration: underline;
 }
 
@@ -294,7 +287,7 @@ main.contactPage {
 }
 
 .instagramLink a {
-   color: black;
+   color: rgb(0, 0, 0);
    text-decoration: none;
 }
 
@@ -328,14 +321,14 @@ main.contactPage {
    width: 100%;
    padding: 8px;
    margin-bottom: 10px;
-   border: 1px solid #999;
+   border: 1px solid rgb(153, 153, 153);
    font-size: 1em;
    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contactForm input[type="submit"] {
-   background-color: black;
-   color: white;
+   background-color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
    border: none;
    border-radius: 20px;
    padding: 10px;
@@ -351,7 +344,7 @@ main.contactPage {
 
 footer {
    text-align: center;
-   background: linear-gradient(to right, #c75d19, #f2a16f, #f28c28);
+   background: linear-gradient(to right, rgb(199, 93, 25), rgb(242, 161, 111), rgb(242, 140, 40));
    padding: 12px 10px;
    margin-top: 20px;
    font-weight: bold;
@@ -363,7 +356,7 @@ footer p {
 }
 
 footer a {
-   color: black;
+   color: rgb(0, 0, 0);
    text-decoration: none;
 }
 
